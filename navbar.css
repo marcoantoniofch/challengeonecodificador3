@@ -2,7 +2,7 @@
     box-shadow: 0 4px 5px var(--navbar-shallow-color);
     /*linea de menu*/
     position: fixed;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color);*/
     left: 0;
     top: 0;
     width: 100%;
@@ -13,6 +13,8 @@
     justify-content: space-between;
     padding: 10px;
     max-width: 980px;
+    margin: 0 auto;
+    /* centrado*/
 }
 
 .logo {
@@ -20,88 +22,90 @@
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--primario-color);
     margin: 0 auto;
 }
 
-/*titulo-menu*/
+.logo img {
+    border-radius: 10%;
+}
 
-.titulo {
+/*titulo-menu*/
+.menu {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
-.titulo li {
-    padding: 0 15px;
+.menu li {
+    padding: 0 10px;
 }
 
-.titulo a {
-    color: var(--text-color);
-    font-size: 30px;
+.menu a {
+    color: var(--texto-color);
+    font-size: 40px;
     font-weight: 500;
-    line-height: 30px;
-    /*ancho de titulo*/
+    line-height: 60px;
     text-transform: uppercase;
 }
 
 .open-menu,
 .close-menu {
     display: none;
-    /* mostrar iconos*/
 }
 
 @media(max-width:950px) {
 
     /*titulo-menu*/
-
-    .titulo {
+    .menu {
         flex-direction: column;
         position: fixed;
+        /*fixec*/
         left: 0;
         top: 0;
         width: 100%;
         align-items: center;
         background-color: var(--menu-mobile-background-color);
         height: 100%;
-        /*fondo de alto*/
         overflow-y: auto;
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.4s;
+        transition: opacity 0.3s;
     }
 
-    .titulo li {
+    .menu li {
         padding: 0;
     }
 
-    .titulo a {
-        color: var(--text-color-inverse);
-        line-height: 60px;
-        /*ancho de titulo*/
+    .menu a {
+        color: var(--texto-color-inverso);
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 70px;
     }
 
     .open-menu,
     .close-menu {
-        display: none;
-        /* mostrar iconos*/
         display: block;
         border: none;
         background: none;
         cursor: pointer;
+
     }
 
     .close-menu {
         align-self: flex-end;
-        padding: 29px 15px;
+        padding: 28px 16px;
     }
-    .menu_abrircerrar{
+
+    .menu_abrirCerrar {
         opacity: 1;
         pointer-events: all;
     }
+
     .open-menu:focus:not(:focus-visible),
-    .close-menu:focus:not(:focus-visible){
+    .close-menu:focus:not(:focus-visible) {
         outline: none;
     }
 }

@@ -1,9 +1,9 @@
-const menu = document.querySelector(".titulo")
+const menu = document.querySelector(".menu")
 const abrirMenuBoton = document.querySelector(".open-menu")
 const cerrarMenuBoton = document.querySelector(".close-menu")
 
 function alternarMenu(){
-menu.classList.toggle("menu_abrircerrar")
+menu.classList.toggle("menu_abrirCerrar")
 }
 
 abrirMenuBoton.addEventListener("click",alternarMenu);

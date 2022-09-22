@@ -2,41 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+  <!--link rel="stylesheet" href="reset.css"-->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="principal.css" />
 </head>
 
 <body>
-    <header class="topheader">
-        <nav class="topnav">
-            <a href="index.html" class="logo">
-                <img height="70" width="180" src="images/logo.png" alt="Logo de Alura" />
-                <div class="logotype">
-                    Marco Antonio<br />
-                    { code }
-                </div>
-            </a>
-            <button class="open-menu" aria-label="Abrir menú">
-                <img src="images/hamburger-icon.svg" alt="abrir menú" />
-            </button>
-            <ul class="titulo">
-                <button class="close-menu" aria-label="Cerrar menú">
-                    <img src="images/close-icon.svg" alt="cerrar menú" />
-                </button>
-                <li><a href="index.html" class="selected">Encriptador</a></li>
-                <li><a href="index.html" class="selected"> Desencriptador</a></li>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="index.html" class="logo">
+        <img height="70" width="55" src="images/logo3-preview.png" alt="Logo de Alura" />
+        <div class="logotype">
+          Alura - Marco Antonio<br />
+          { code }
+        </div>
+      </a>
+      <button class="open-menu" aria-label="Abrir menú">
+        <img src="images/hamburger-icon.svg" alt="abrir menú" />
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <img src="images/close-icon.svg" alt="cerrar menú" />
+        </button>
+        <li><a href="index.html" class="selected">Encriptador</a></li>
+        <li><a href="index.html" class="selected"> Desencriptador</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile">
+        <div class="profile-info">
+          <!-- <h1 class="profile-title">Hola soy, <br>Marco antonio</h1>-->
+          <input type="text" class="textoEntrada">
+          <div class="botones">
+            <img src="images/!.png" alt="">
+            <p class="profile-details">
+              Solo letras minúsculas y sin acentos.
+            </p>
+          </div>
+          <div>
+            <button class="encriptar-btn">Encriptar</button>
+            <button class="desencriptar-btn">Desencriptar</button>
+            <!--<button class="profile-btn">Descargar cv</button>-->
+          </div>
 
-            </ul>
-        </nav>
-    </header>
+        </div>
+        <div class="profile-img-section">
+          <!-- <img class="profile-img" src="images/mensaje.svg" alt="">-->
+          <input type="text" class="textoSalida">
+          <div class="">
+            <button class="copiar-btn">Copiar</button>
+            <p class=""> </p>
+          </div>
+
+      </section>
+    </div>
+  </main>
+
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
     <main class="main">
         <section class="div-principal">
             <form action="">
@@ -65,8 +104,4 @@
             </div>
         </section>
     </main>
-    <script defer src="script.js"></script>
-    
-</body>
-
-</html>
+-->
