@@ -125,13 +125,13 @@
    
   }
   .encriptar-btn {
-    font-size: 25px;
+    font-size: 23px;
     padding: 0.5em 1em;
     border-radius: 9px;
     cursor: pointer;
   }
   .desencriptar-btn {
-    font-size: 25px;
+    font-size: 23px;
     padding: 0.5em 1em;
     border-radius: 9px;
     cursor: pointer;
@@ -143,6 +143,7 @@
     margin: 5px;
     border: none;
   }
+  
   .textoSalida {
     width: 370px;
     height: 325px;
@@ -151,12 +152,16 @@
     padding-bottom: 3px;
     margin-bottom: 70px;
     border: none;
+    background-image: url("images/mensaje.svg");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
   }
+ 
   .copiar-btn {
-    font-size: 25px;
+    font-size: 23px;
     padding: 0.5em 1em;
     border-radius: 7px;
-    cursor: pointer;
-    
+    cursor: pointer;    
   }
 }

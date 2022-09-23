@@ -24,8 +24,12 @@
     font-weight: 500;
     color: var(--primario-color);
     margin: 0 auto;
+    
 }
 
+.logotype{
+    padding: 10px;
+}
 .logo img {
     border-radius: 10%;
 }
